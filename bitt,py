@@ -1,0 +1,11 @@
+def power2(number):
+    if (number==0):
+        return 0
+    if ((number &(~(number-1)))==number):
+        return 1
+    return 0
+number=int(input("number"))
+if(power2(number)):
+    print("\nthe no is pow of 2")
+else:
+    print("\nthe no is not pow of 2")
